@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+      Web Oficial de la Real Sociedad
+    </title>
+	  <link rel="stylesheet" href="PWS.css">
+  </head>
+  
+  <body>
+    <article>
+      <h1>
+          ¡Bienvenido a la web oficial de la Real Sociedad!
+      </h1>
+      <br>
+      <img src="Fotos/RealSociedad.png" alt="Logo" id="Escudo">
+    </article>
+    <ul id="menuUl">
+      <li><a href="PWS.html">Inicio</a></li>
+
+      <li><a href="socios.html">Hazte Socio</a></li>
+        
+      <li><a href="actualidad.html">Actualidad</a></li>
+        
+      <li><a href="RStore.html">Real Sociedad Store</a></li>
+        
+    </ul>
+
+    <h2 id="indice">
+      Socios
+    </h2>
+    <nav>
+      <ul id="listaIndice">
+        <li><a href="#seccion1">Datos personales</a></li>
+        <li><a href="#seccion2">Precio por zona</a></li>
+        <li><a href="#seccion3">Selección de zona</a></li>
+      </ul>
+    </nav>
+    <h2 class="tituloH2">¿Quieres venir a todos los partidos?</h2> 
+    <h3>Hazte socio y consigue to localidad en el estadio de Anoeta</h3>
+    <form action="server.php" method="post">
+      <div>
+        <fieldset>
+          <legend>
+              Datos personales
+          </legend>
+          <label for="nombre">Nombre y Apellidos</label>
+          <br>
+          <input type="text" name="nombre" id="nombre">
+          <br>
+          <br>
+          <label for="DNI">DNI</label>
+          <br>
+          <input type="text" name="DNI" id="DNI">
+          <br>
+          <br>
+          <label for="numTelefono">Numero de Telefono</label>
+          <br>
+          <input type="text" name="numTelefono" id="numTelefono">
+          <br>
+          <br>
+          <label for="E-mail">Cuenta E-mail</label>
+          <br>
+          <input type="text" name="E-mail" id="E-mail">
+          <p class="textoFormularios">
+            ¿Cuantos años tienes?
+          </p>
+          <label for="0_18">0 - 18 años</label>
+          <input type="radio" name="edad" id="0_18" value="1">
+          <label for="18_40">18 - 40 años</label>
+          <input type="radio" name="edad" id="18_40" value="2">
+          <label for="40_65">40 - 65 años</label>
+          <input type="radio" name="edad" id="40_65" value="3">
+          <label for="Mas65">Mas de 65</label>
+          <input type="radio" name="edad" id="Mas65" value="4">
+          <br>
+          <br>
+          <label for="privacidad">Acepto la politica de privacidad</label>
+          <input type="checkbox" name="privacidad" id="privacidad">
+        </fieldset>
+      </div>
+    </form>
+    <br>
+    <section id="seccion2">
+      <h3>
+        Precios por localidad dependiendo la zona
+      </h3>
+      <div class="tablaImagen">
+        <table id="tablaPrecios">
+          <tr>
+            <th></th>
+            <th>Grada Este</th>
+            <th>Grada Oeste</th>
+            <th>Grada Aitor Zabaleta</th>
+            <th>Grada Familiar</th>
+            <th>Palco VIP</th>
+          </tr>
+          <tr>
+            <td><strong>0 - 18 años</strong></td>
+            <td>350€</td>
+            <td>400€</td>
+            <td>250€</td>
+            <td>230€</td>
+            <td>800€</td>
+          </tr>
+          <tr>
+            <td><strong>18 - 40 años</strong></td>
+            <td>700€</td>
+            <td>800€</td>
+            <td>500€</td>
+            <td>460€</td>
+            <td>1600€</td>
+          </tr>
+          <tr>
+            <td><strong>40 - 65 años</strong></td>
+            <td>900€</td>
+            <td>1000€</td>
+            <td>700€</td>
+            <td>660€</td>
+            <td>1800€</td>
+          </tr>
+          <tr>
+            <td><strong>mas de 65 años</strong></td>
+            <td>400€</td>
+            <td>450€</td>
+            <td>300€</td>
+            <td>280€</td>
+            <td>850€</td>
+          </tr>
+        </table>
+        <img src="Fotos/anoeta.jpeg" alt="Anoeta" id="Anoeta">
+      </div>
+      <br>
+      <p class="textoDebajoAnoeta"><strong>*precio para toda la temporada</strong></p>
+      <p class="textoDebajoAnoeta"><strong>*incluye partidos de Liga, Copa del Rey y Champions League</strong></p>
+    </section>
+    <section id="seccion3">
+      <h3>Seleccion de Zona</h3>
+      <form action="server.php" method="post">
+        <fieldset>
+            <legend>
+                Selección de zona
+            </legend>
+            <label for="Zona">Seleccione la grada</label>
+            <br>
+            <select id="Zona">
+                <option value="GradaEste">Grada Este</option>
+                <option value="GradaOeste">Grada Oeste</option>
+                <option value="GradaAitorZabaleta">Grada Aitor Zabaleta</option>
+                <option value="GradaFamiliar">Grada Familiar</option>
+                <option value="PalcoVIP">Palco VIP</option>
+            </select>
+            <br>
+            <br>
+            <label for="cantidad">Seleccione la cantidad de abonos</label>
+            <br>
+            <select id="cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </fieldset>
+      </form>
+    </section>
+    <br>
+    <input id="enviar" type="submit">
+    <br>
+    <hr class="lineaAzul">
+
+  </body>
+</html>
